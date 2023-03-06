@@ -1,10 +1,10 @@
 import Express from 'express';
+import routes from './routes';
 
-const app = Express(); 
-app.get('/hello', (request, response)=>{
-   response.send("ola");
+const app = Express();
 
-});
+app.use(Express.json());
+app.use(routes);
 
 app.listen(8080);
 
