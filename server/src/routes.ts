@@ -1,7 +1,7 @@
-import express from 'express';
+import Express from 'express';
 
 
-const routes = express.Router();
+const routes = Express.Router();
 
 routes.get('/', (request, response)=>{
    response.send({message: "Hello world!"});
